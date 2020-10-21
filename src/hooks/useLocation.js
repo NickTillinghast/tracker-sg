@@ -29,7 +29,6 @@ export default (shouldTrack, callback) => {
                 setSubscriber(null);
             }
         }
-
     }, [shouldTrack]);
     return [err];
 }
