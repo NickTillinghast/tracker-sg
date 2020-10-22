@@ -10,9 +10,10 @@ import TrackForm from '../components/TrackForm';
 
 const TrackCreateScreen = ({ isFocused }) => {
     const { state, addLocation } = useContext(LocationContext);
-
+    // console.log("outside", state.recording);
     const [err] = useLocation(isFocused, (location) => {
         addLocation(location, state.recording)
+        // console.log("inside", state.recording);
     })
 
     return (
